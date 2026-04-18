@@ -24,4 +24,4 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:12px}
 	.gallery-left{height:320px}
 	.gallery-right{grid-template-columns:repeat(2,1fr)}
 }
-@media (max-width:600px){.hero h1{font-size:22px}.hero .date, .hero .address{margin-left:0;margin-right:0}.container{padding:12px}}
+@media (max-width:600px){.floaty{display:none}.hero h1{font-size:22px}.hero .date, .hero .address{margin-left:0;margin-right:0}.container{padding:12px}}
