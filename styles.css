@@ -1,8 +1,11 @@
 :root{--bg:#f7f7fb;--accent:#0b6efd;--muted:#666}
 *{box-sizing:border-box}body{font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;margin:0;background:var(--bg);color:#111}
 .container{max-width:900px;margin:0 auto;padding:24px}
-.hero{background:white;padding:28px 0 12px;border-bottom:4px solid #eee}
+.hero{background:white;padding:28px 0 12px;border-bottom:4px solid #eee;position:relative;overflow:hidden}
 .hero h1{margin:0;font-size:28px}
+.floaties{position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none}
+.floaty{position:absolute;font-size:32px;animation:float 6s ease-in-out infinite}
+@keyframes float{0%{transform:translateY(0px) rotate(0deg)}50%{transform:translateY(-20px) rotate(5deg)}100%{transform:translateY(0px) rotate(-5deg)}}
 .date{color:var(--muted);margin-top:8px}
 .cta a{color:var(--accent);text-decoration:none}
 section{background:white;margin:18px 0;padding:18px;border-radius:8px}
@@ -21,4 +24,4 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:12px}
 	.gallery-left{height:320px}
 	.gallery-right{grid-template-columns:repeat(2,1fr)}
 }
-@media (max-width:600px){.hero h1{font-size:22px;padding:0 12px}.container{padding:12px}}
+@media (max-width:600px){.hero h1{font-size:22px}.hero .date, .hero .address{margin-left:0;margin-right:0}.container{padding:12px}}
